@@ -20,6 +20,14 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+
+  padding: 40px;
   background-color: white;
   border-radius: 40px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -33,9 +41,23 @@ body {
   align-items: center;
   align-content: stretch;
 
-  margin: 40px;
+  margin: 20px 0;
 }
 
 .color > input {
   margin: 16px 0;
 }
+
+/* Media query min 768px */
+@media (min-width: 768px) {
+  .container {
+    width: 40vw;
+    height: 45vh;
+    font-size: 2rem;
+  }
+
+  .color {
+    margin: 32px 0;
+  }
+}
+
