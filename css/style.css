@@ -5,5 +5,33 @@
 }
 
 body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #ababab;
   font-family: "Bitter", serif;
+}
+
+.container {
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.color {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+
+  margin: 40px;
 }
